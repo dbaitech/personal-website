@@ -3,7 +3,8 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./components/Header/Header";
+import Header from "./components/Header";
+import Homepage from "./pages/Homepage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -11,9 +12,9 @@ root.render(
     <Router>
       <Header />
       <Routes>
-        <Route exact path="/" component={App} />
-        <Route path="/projects" component={App} />
-        <Route path="/music" component={App} />
+        <Route exact path="/" component={Homepage} />
+        <Route path="/projects" component={Homepage} />
+        <Route path="/music" component={Homepage} />
       </Routes>
     </Router>
     <App />
