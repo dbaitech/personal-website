@@ -8,7 +8,8 @@ nav.navbar {
 }
 
 nav.navbar a.navbar-brand {
-  width: 9%;
+  margin-left: 0%;
+  width: 7%;
 }
 
 nav.navbar .navbar-nav .nav-link.navbar-link {

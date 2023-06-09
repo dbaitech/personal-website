@@ -15,7 +15,7 @@ function Header() {
   return (
     <Navbar bg="light" expand="lg" className={"header"}>
       <Container>
-        <LinkContainer to="/">
+        {/* <LinkContainer to="/">
           <Navbar.Brand
             className={
               activeLink === "projects" ? "active navbar-link" : "navbar-link"
@@ -24,12 +24,22 @@ function Header() {
           >
             Home
           </Navbar.Brand>
-        </LinkContainer>
+        </LinkContainer> */}
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
+            <LinkContainer to="/">
+              <Nav.Link
+                className={
+                  activeLink === "home" ? "active navbar-link" : "navbar-link"
+                }
+                onClick={() => updateActiveLink("home")}
+              >
+                Home
+              </Nav.Link>
+            </LinkContainer>
             <LinkContainer to="/projects">
               <Nav.Link
                 className={
