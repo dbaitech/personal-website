@@ -53,7 +53,7 @@ function Banner() {
     <section className="banner" id="home">
       <Container>
         <Row className="aligh-items-center">
-          <Col xs={12} md={6} xl={7}>
+          <Col xs={12} md={6} xl={6}>
             <TrackVisibility className="banner-content">
               {({ isVisible }) => (
                 <div
@@ -64,15 +64,15 @@ function Banner() {
                   <h1>Hi, I'm Diana!</h1>
                   <p>
                     I'm a 3rd student studying <b>Computer Science</b> at the
-                    <b> University of Waterloo</b> with a specialization in{" "}
-                    <b>Artifical Intelligence</b> and a minor in{" "}
+                    <b> University of Waterloo</b> with a specialization in
+                    <b>Artificial Intelligence</b> and a minor in
                     <b>Combinatorics and Optimization</b>.
                   </p>
-                  <p>
+                  {/* <p>
                     I love learning about machine learning and cryptography. In
                     my spare time, you can find me playing the piano, watching
                     astronomy documentaries or on the tennis courts.
-                  </p>
+                  </p> */}
                 </div>
               )}
             </TrackVisibility>
