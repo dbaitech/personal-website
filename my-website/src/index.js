@@ -13,8 +13,8 @@ root.render(
       <Header />
       <Routes>
         <Route exact path="/" component={Homepage} />
+        <Route path="/about" component={Homepage} />
         <Route path="/projects" component={Homepage} />
-        <Route path="/music" component={Homepage} />
       </Routes>
     </Router>
     <App />

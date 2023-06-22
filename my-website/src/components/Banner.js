@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.css";
-import { Container, Row, Col } from "react-bootstrap";
-import TrackVisibility from "react-on-screen";
+import { Container } from "react-bootstrap";
 
 function Banner() {
   const [loopNum, setLoopNum] = useState(0);
@@ -52,32 +51,28 @@ function Banner() {
   return (
     <section className="banner" id="home">
       <Container>
-        <Row className="aligh-items-center">
-          <Col xs={12} md={6} xl={6}>
-            <TrackVisibility className="banner-content">
-              {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__fadeIn" : ""
-                  }
-                >
-                  <h1>Hi, I'm Diana!</h1>
-                  <p>
-                    I'm a 3rd student studying <b>Computer Science</b> at the
-                    <b> University of Waterloo</b> with a specialization in
-                    <b>Artificial Intelligence</b> and a minor in
-                    <b>Combinatorics and Optimization</b>.
-                  </p>
-                  {/* <p>
-                    I love learning about machine learning and cryptography. In
-                    my spare time, you can find me playing the piano, watching
-                    astronomy documentaries or on the tennis courts.
-                  </p> */}
-                </div>
-              )}
-            </TrackVisibility>
-          </Col>
-        </Row>
+        <div className="banner-content">
+          <div>
+            <h1>Hi, I'm Diana!</h1>
+            <p>
+              I'm a 3rd student <b>Computer Science</b> student at the
+              <b> University of Waterloo</b> passionate about machine learning
+              and cryptography.
+            </p>
+
+            <p>
+              <a href="/about">Learn more about me →</a>
+            </p>
+            <p>
+              <a href="/projects">View my projects →</a>
+            </p>
+          </div>
+          <div className="connect">
+            <h3>Let's Connect</h3>
+            <img src="../assets/linkedin.svg" alt="" />
+            <img src="../assets/github.svg" alt="" />
+          </div>
+        </div>
       </Container>
     </section>
   );

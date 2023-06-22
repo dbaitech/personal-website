@@ -11,12 +11,17 @@ html {
 }
 
 body {
+  height: 100vh;
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background: #06000f !important;
-  color: #fff !important;
+  background: #fff !important;
+  color: #000 !important;
   font-family: "Centra", sans-serif !important;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-image: url("./assets/binarybackground.svg") !important;
 }
 
 h1,
@@ -38,10 +43,6 @@ ul {
   margin: 0;
   padding: 0;
   line-height: normal;
-  text-decoration: none;
-}
-
-a:hover {
   text-decoration: none;
 }
 
@@ -77,17 +78,19 @@ p.danger {
 }
 /************ Navbar Css ************/
 nav.navbar {
-  padding: 35px 0;
+  padding: 20px 0;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 9999;
   transition: 0.32s ease-in-out;
-  background-color: #06000f !important;
+  background: linear-gradient(180deg, #aa9cff 0%, #c7beff 100%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+
 nav.navbar.scrolled {
-  padding: 15px 0;
-  background-color: #06000f;
+  padding: 12px 0;
+  background-color: #f8e9ff;
 }
 nav.navbar a.navbar-brand {
   width: 9%;
@@ -96,8 +99,8 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
   color: #fff !important;
   letter-spacing: 0.8px;
-  padding: 0 40px;
-  font-size: 20px;
+  padding: 0 25px;
+  font-size: 25px;
   opacity: 0.75;
 }
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
@@ -153,47 +156,68 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Banner Css ************/
 
 .banner {
-  background-image: url("./assets/galaxy2.jpg");
-  margin: 75px 0 75px;
-  padding: 200px 0 200px;
-  background-position: top center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.banner .tagline {
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  padding: 8px 10px;
-  background: #06000f;
-  font-size: 20px;
-  margin-bottom: 16px;
-  display: inline-block;
+  margin: 65px 0 65px;
+  padding-top: 100px;
+  padding-bottom: 20px;
 }
 
 .banner .banner-content {
   font-weight: 400;
   padding: 40px;
-  margin: 0;
+  margin: 40px;
   margin-bottom: 16px;
   display: inline-block;
-  background-color: rgba(0, 0, 0, 0.4);
   border-radius: 20px;
+  color: #222222;
+  backdrop-filter: blur(3px);
+  text-align: center;
 }
+
+.banner .connect {
+  font-weight: 600;
+  padding: 40px;
+  margin: 40px;
+  margin-bottom: 16px;
+  display: inline-block;
+  border-radius: 20px;
+  color: #222222;
+  backdrop-filter: blur(3px);
+  text-align: center;
+}
+
 .banner h1 {
-  font-size: 65px;
+  font-size: 70px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
   margin-bottom: 20px;
   display: block;
 }
+
+.banner h3 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+}
+
 .banner p {
-  color: #ffffff;
-  font-size: 18px;
+  font-size: 25px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
+}
+
+.banner p a {
+  color: #000 !important;
+  text-decoration: none !important;
+}
+
+.banner p a:hover {
+  text-decoration: underline !important;
 }
 .banner button {
   color: #fff;

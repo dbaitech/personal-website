@@ -52,6 +52,16 @@ function Header() {
                 Home
               </Nav.Link>
             </LinkContainer>
+            <LinkContainer to="/about">
+              <Nav.Link
+                className={
+                  activeLink === "about" ? "active navbar-link" : "navbar-link"
+                }
+                onClick={() => updateActiveLink("about")}
+              >
+                About
+              </Nav.Link>
+            </LinkContainer>
             <LinkContainer to="/projects">
               <Nav.Link
                 className={
@@ -62,16 +72,6 @@ function Header() {
                 onClick={() => updateActiveLink("projects")}
               >
                 Projects
-              </Nav.Link>
-            </LinkContainer>
-            <LinkContainer to="/music">
-              <Nav.Link
-                className={
-                  activeLink === "music" ? "active navbar-link" : "navbar-link"
-                }
-                onClick={() => updateActiveLink("music")}
-              >
-                Music
               </Nav.Link>
             </LinkContainer>
           </Nav>

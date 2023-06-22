@@ -4,10 +4,11 @@ import Connect from "../components/Connect";
 
 function Homepage() {
   return (
-    <>
-      <Banner />
-      <Connect />
-    </>
+    <Banner />
+    // <>
+
+    //   {/* <Connect /> */}
+    // </>
   );
 }
 
