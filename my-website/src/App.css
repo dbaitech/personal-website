@@ -157,14 +157,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .banner {
   margin: 65px 0 65px;
-  padding-top: 100px;
+  padding-top: 75px;
   padding-bottom: 20px;
 }
 
 .banner .banner-content {
   font-weight: 400;
-  padding: 40px;
-  margin: 40px;
+  padding: 50px;
+  margin-top: 16px;
   margin-bottom: 16px;
   display: inline-block;
   border-radius: 20px;
@@ -175,14 +175,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .banner .connect {
   font-weight: 600;
-  padding: 40px;
-  margin: 40px;
-  margin-bottom: 16px;
+  padding: 20px;
+  margin: 40px 0 16px;
   display: inline-block;
-  border-radius: 20px;
-  color: #222222;
-  backdrop-filter: blur(3px);
-  text-align: center;
+}
+
+.banner .logos {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 40px;
 }
 
 .banner h1 {
@@ -195,7 +197,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .banner h3 {
-  text-align: center;
   font-size: 40px;
   font-weight: 700;
   letter-spacing: 0.8px;
@@ -208,7 +209,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 25px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
-  width: 96%;
+  display: block;
 }
 
 .banner p a {
