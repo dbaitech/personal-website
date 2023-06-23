@@ -15,11 +15,11 @@ function AboutBanner() {
                 <p>
                   I'm a 3rd student studying Computer Science at the University
                   of Waterloo with a
-                  <ul>
-                    <li>Specialization in Artificial Intelligence</li>
-                    <li>Minor in Combinatorics and Optimization</li>
-                  </ul>
                 </p>
+                <ul>
+                  <li>Specialization in Artificial Intelligence</li>
+                  <li>Minor in Combinatorics and Optimization</li>
+                </ul>
                 <p>
                   In my spare time, you can find me playing the piano, watching
                   astronomy documentaries or on the tennis courts.

@@ -341,6 +341,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: block;
 }
 
+.about-banner ul {
+  font-size: 25px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  display: block;
+}
+
 /************ Skills CSS ************/
 
 .skills {
