@@ -361,3 +361,30 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skills p {
   text-align: right;
 }
+
+/************ Projects CSS ************/
+
+.projects-banner {
+  margin: 65px 0 65px;
+  padding-top: 30px;
+}
+
+.projects-banner .projects-banner-content {
+  font-weight: 400;
+  padding: 50px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  display: inline-block;
+  border-radius: 20px;
+  color: #222222;
+  backdrop-filter: blur(3px);
+}
+
+.projects-banner h1 {
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+}

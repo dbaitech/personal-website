@@ -1,7 +1,7 @@
 import React from "react";
 import AboutBanner from "../components/AboutBanner";
 
-function AboutPage() {
+function About() {
   return (
     <>
       <AboutBanner />
@@ -9,4 +9,4 @@ function AboutPage() {
   );
 }
 
-export default AboutPage;
+export default About;
