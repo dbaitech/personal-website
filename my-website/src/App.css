@@ -1,4 +1,4 @@
-/************ Default Css ************/
+/************ Default CSS ************/
 * {
   margin: 0;
   padding: 0;
@@ -46,6 +46,40 @@ ul {
   text-decoration: none;
 }
 
+h1 {
+  font-size: 70px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+}
+
+p {
+  font-size: 25px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  display: block;
+}
+
+p a {
+  color: #000 !important;
+  text-decoration: none !important;
+}
+
+p a:hover {
+  text-decoration: underline !important;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -76,7 +110,7 @@ p.success {
 p.danger {
   color: red;
 }
-/************ Navbar Css ************/
+/************ Navbar CSS ************/
 nav.navbar {
   padding: 20px 0;
   position: fixed;
@@ -153,7 +187,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-color: transparent;
 }
 
-/************ Banner Css ************/
+/************ Banner CSS ************/
 
 .banner {
   margin: 65px 0 65px;
@@ -185,6 +219,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   justify-content: center;
   flex-direction: row;
   gap: 40px;
+  transition: 0.3s ease-in-out;
 }
 
 .banner h1 {
@@ -238,7 +273,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner button:hover svg {
   margin-left: 25px;
 }
-.banner img {
+.banner svg:hover {
   animation: updown 3s linear infinite;
 }
 @keyframes updown {
@@ -256,8 +291,86 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-right: 0.08em solid #666;
 }
 
-.connect {
+/************ AboutBanner CSS ************/
+
+.about-banner {
+  margin: 65px 0 65px;
+  padding-top: 75px;
+  padding-bottom: 20px;
+  display: grid;
+  flex-direction: row;
+}
+
+.about-banner .about-banner-content {
+  font-weight: 400;
+  padding: 50px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  display: inline-block;
+  border-radius: 20px;
+  color: #222222;
+  backdrop-filter: blur(3px);
+}
+
+.about-banner .logos {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: row;
+  gap: 40px;
+  transition: 0.3s ease-in-out;
+}
+
+.about-banner h1 {
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.about-banner h2 {
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.about-banner h3 {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.about-banner p {
+  font-size: 25px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  display: block;
+}
+
+.about-banner p a {
+  color: #000 !important;
+  text-decoration: none !important;
+}
+
+.about-banner p a:hover {
+  text-decoration: underline !important;
+}
+
+.skills {
+  font-weight: 400;
+  padding: 50px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  display: inline-block;
+  border-radius: 20px;
+  color: #222222;
+  backdrop-filter: blur(3px);
+  text-align: right;
 }
