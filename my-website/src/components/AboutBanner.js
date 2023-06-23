@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import { Container, Row, Col } from "react-bootstrap";
+import Skills from "./Skills";
 
 function AboutBanner() {
   return (
@@ -20,8 +21,7 @@ function AboutBanner() {
                   </ul>
                 </p>
                 <p>
-                  I love learning about machine learning and cryptography. In my
-                  spare time, you can find me playing the piano, watching
+                  In my spare time, you can find me playing the piano, watching
                   astronomy documentaries or on the tennis courts.
                 </p>
               </Col>
@@ -51,6 +51,9 @@ function AboutBanner() {
                   </a>
                 </div>
               </Col>
+            </Row>
+            <Row>
+              <Skills />
             </Row>
           </div>
         </div>

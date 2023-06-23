@@ -253,8 +253,27 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .banner p a:hover {
+  transition: 1s ease-in-out !important;
   text-decoration: underline !important;
 }
+
+.banner .logo:hover {
+  animation: updown 3s linear infinite;
+  transition: 0.3s ease-in-out !important;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
 .banner button {
   color: #fff;
   font-weight: 700;
@@ -273,20 +292,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner button:hover svg {
   margin-left: 25px;
 }
-.banner svg:hover {
-  animation: updown 3s linear infinite;
-}
-@keyframes updown {
-  0% {
-    transform: translateY(-20px);
-  }
-  50% {
-    transform: translateY(20px);
-  }
-  100% {
-    transform: translateY(-20px);
-  }
-}
+
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
@@ -295,8 +301,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .about-banner {
   margin: 65px 0 65px;
-  padding-top: 75px;
-  padding-bottom: 20px;
+  padding-top: 30px;
   display: grid;
   flex-direction: row;
 }
@@ -329,24 +334,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: block;
 }
 
-.about-banner h2 {
-  font-size: 40px;
-  font-weight: 500;
-  letter-spacing: 0.8px;
-  line-height: 1;
-  margin-bottom: 20px;
-  display: block;
-}
-
-.about-banner h3 {
-  font-size: 40px;
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  line-height: 1;
-  margin-bottom: 20px;
-  display: block;
-}
-
 .about-banner p {
   font-size: 25px;
   letter-spacing: 0.8px;
@@ -354,17 +341,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: block;
 }
 
-.about-banner p a {
-  color: #000 !important;
-  text-decoration: none !important;
-}
-
-.about-banner p a:hover {
-  text-decoration: underline !important;
-}
+/************ Skills CSS ************/
 
 .skills {
-  font-weight: 400;
+  width: 100%;
   padding: 50px;
   margin-top: 16px;
   margin-bottom: 16px;
@@ -372,5 +352,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 20px;
   color: #222222;
   backdrop-filter: blur(3px);
+}
+
+.skills h1 {
+  text-align: right;
+}
+
+.skills p {
   text-align: right;
 }
