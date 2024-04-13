@@ -5,11 +5,13 @@ import Header from "./components/Header";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
+import ScrollToTop from "./utils/ScrollToTop";
 
 function App() {
   return (
     <React.StrictMode>
       <Router>
+        <ScrollToTop />
         <Header />
         <Routes>
           <Route exact path="/" element={<Home />} />

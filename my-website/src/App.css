@@ -18,10 +18,10 @@ body {
   background: #fff !important;
   color: #000 !important;
   font-family: "Centra", sans-serif !important;
-  background-position: center !important;
+  /* background-position: center !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
-  background-image: url("./assets/binarybackground.svg") !important;
+  background-image: url("./assets/binarybackground.svg") !important; */
 }
 
 h1,
@@ -120,6 +120,10 @@ nav.navbar {
   transition: 0.32s ease-in-out;
   background: linear-gradient(180deg, #aa9cff 0%, #c7beff 100%);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.navbar .container {
+  margin-left: 20px;
 }
 
 nav.navbar.scrolled {
@@ -258,8 +262,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .banner .logo:hover {
-  animation: updown 3s linear infinite;
-  transition: 0.3s ease-in-out !important;
+  /* animation: updown 3s linear infinite;
+  transition: 0.3s ease-in-out !important; */
 }
 
 @keyframes updown {
@@ -348,6 +352,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: block;
 }
 
+.about-text {
+  padding-top: 30px;
+}
+
+.profile-image {
+  border-radius: 50%;
+  align-items: center;
+  overflow: hidden;
+  width: 400px;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
 /************ Skills CSS ************/
 
 .skills {
@@ -369,7 +388,31 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: right;
 }
 
+/************ Experience CSS ************/
+
+.experience {
+  width: 100%;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  display: inline-block;
+  border-radius: 20px;
+  color: #222222;
+  backdrop-filter: blur(3px);
+}
+
+.experience h1 {
+  text-align: left;
+}
+
+.experience p {
+  text-align: left;
+}
+
 /************ Projects CSS ************/
+
+html {
+  scroll-behavior: smooth;
+}
 
 .projects-banner {
   margin: 3% 0 3%;

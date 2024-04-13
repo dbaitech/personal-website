@@ -12,7 +12,7 @@ function Banner() {
           <div>
             <h1>Hi, I'm Diana</h1>
             <p>
-              I'm a 3rd student <b>Computer Science</b> student at the
+              I'm a <b>Computer Science</b> student at the
               <b> University of Waterloo</b> passionate about machine learning
               and cryptography.
             </p>

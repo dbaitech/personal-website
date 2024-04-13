@@ -1,11 +1,11 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 
-function Skills() {
+function Experience() {
   return (
     <Container>
-      <div className="skills">
-        <h1>Skills</h1>
+      <div className="experience">
+        <h1>Experience</h1>
         <p>
           <b>Languages:</b> C/C++, Python, Java, JavaScript, SQL, HTML/CSS, Bash
         </p>
@@ -18,4 +18,4 @@ function Skills() {
   );
 }
 
-export default Skills;
+export default Experience;
