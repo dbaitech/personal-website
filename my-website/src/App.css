@@ -388,10 +388,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: right;
 }
 
-/************ Experience CSS ************/
+/************ Resume CSS ************/
 
-.experience {
-  width: 100%;
+.resume {
+  margin: 3% 0 3%;
+  padding-top: 30px;
+  display: grid;
+  flex-direction: row;
+}
+
+.resume .resume-content {
+  font-weight: 400;
+  padding: 50px;
   margin-top: 16px;
   margin-bottom: 16px;
   display: inline-block;
@@ -400,12 +408,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   backdrop-filter: blur(3px);
 }
 
-.experience h1 {
+.resume h1 {
   text-align: left;
 }
 
-.experience p {
-  text-align: left;
+.resume p {
+  text-align: center;
 }
 
 /************ Projects CSS ************/

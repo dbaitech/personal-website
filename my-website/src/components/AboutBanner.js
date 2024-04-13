@@ -2,7 +2,6 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import { Container, Row, Col } from "react-bootstrap";
 import Skills from "./Skills";
-import Experience from "./Experience";
 import profile from "../assets/profile.jpg";
 import linkedin from "../assets/linkedin.svg";
 import github from "../assets/github.svg";
@@ -50,7 +49,13 @@ function AboutBanner() {
               <Skills />
             </Row>
             <Row>
-              <Experience />
+              <div className="resume">
+                <p>
+                  <b>
+                    <a href="/resume">View my resume →</a>
+                  </b>
+                </p>
+              </div>
             </Row>
           </div>
         </div>
