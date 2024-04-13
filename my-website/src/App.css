@@ -1,4 +1,4 @@
-/************ Default Css ************/
+/************ Default CSS ************/
 * {
   margin: 0;
   padding: 0;
@@ -18,10 +18,10 @@ body {
   background: #fff !important;
   color: #000 !important;
   font-family: "Centra", sans-serif !important;
-  background-position: center !important;
+  /* background-position: center !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
-  background-image: url("./assets/binarybackground.svg") !important;
+  background-image: url("./assets/binarybackground.svg") !important; */
 }
 
 h1,
@@ -44,6 +44,40 @@ ul {
   padding: 0;
   line-height: normal;
   text-decoration: none;
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+}
+
+p {
+  font-size: 25px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  display: block;
+}
+
+p a {
+  color: #000 !important;
+  text-decoration: none !important;
+}
+
+p a:hover {
+  text-decoration: underline !important;
 }
 
 img {
@@ -76,7 +110,7 @@ p.success {
 p.danger {
   color: red;
 }
-/************ Navbar Css ************/
+/************ Navbar CSS ************/
 nav.navbar {
   padding: 20px 0;
   position: fixed;
@@ -86,6 +120,10 @@ nav.navbar {
   transition: 0.32s ease-in-out;
   background: linear-gradient(180deg, #aa9cff 0%, #c7beff 100%);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.navbar .container {
+  margin-left: 20px;
 }
 
 nav.navbar.scrolled {
@@ -153,10 +191,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-color: transparent;
 }
 
-/************ Banner Css ************/
+/************ Banner CSS ************/
 
 .banner {
-  margin: 65px 0 65px;
+  margin: 3% 0 3%;
   padding-top: 75px;
   padding-bottom: 20px;
 }
@@ -185,6 +223,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   justify-content: center;
   flex-direction: row;
   gap: 40px;
+  transition: 0.3s ease-in-out;
 }
 
 .banner h1 {
@@ -218,8 +257,27 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .banner p a:hover {
+  transition: 1s ease-in-out !important;
   text-decoration: underline !important;
 }
+
+.banner .logo:hover {
+  /* animation: updown 3s linear infinite;
+  transition: 0.3s ease-in-out !important; */
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
 .banner button {
   color: #fff;
   font-weight: 700;
@@ -238,26 +296,153 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner button:hover svg {
   margin-left: 25px;
 }
-.banner img {
-  animation: updown 3s linear infinite;
-}
-@keyframes updown {
-  0% {
-    transform: translateY(-20px);
-  }
-  50% {
-    transform: translateY(20px);
-  }
-  100% {
-    transform: translateY(-20px);
-  }
-}
+
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
 
-.connect {
+/************ AboutBanner CSS ************/
+
+.about-banner {
+  margin: 3% 0 3%;
+  padding-top: 30px;
+  display: grid;
+  flex-direction: row;
+}
+
+.about-banner .about-banner-content {
+  font-weight: 400;
+  padding: 50px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  display: inline-block;
+  border-radius: 20px;
+  color: #222222;
+  backdrop-filter: blur(3px);
+}
+
+.about-banner .logos {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: row;
+  gap: 40px;
+  transition: 0.3s ease-in-out;
+}
+
+.about-banner h1 {
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.about-banner p {
+  font-size: 25px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  display: block;
+}
+
+.about-banner ul {
+  font-size: 25px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  display: block;
+}
+
+.about-text {
+  padding-top: 30px;
+}
+
+.profile-image {
+  border-radius: 50%;
+  align-items: center;
+  overflow: hidden;
+  width: 400px;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/************ Skills CSS ************/
+
+.skills {
+  width: 100%;
+  padding: 50px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  display: inline-block;
+  border-radius: 20px;
+  color: #222222;
+  backdrop-filter: blur(3px);
+}
+
+.skills h1 {
+  text-align: right;
+}
+
+.skills p {
+  text-align: right;
+}
+
+/************ Resume CSS ************/
+
+.resume {
+  margin: 3% 0 3%;
+  padding-top: 30px;
+  display: grid;
+  flex-direction: row;
+}
+
+.resume .resume-content {
+  font-weight: 400;
+  padding: 50px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  display: inline-block;
+  border-radius: 20px;
+  color: #222222;
+  backdrop-filter: blur(3px);
+}
+
+.resume h1 {
+  text-align: left;
+}
+
+.resume p {
+  text-align: center;
+}
+
+/************ Projects CSS ************/
+
+html {
+  scroll-behavior: smooth;
+}
+
+.projects-banner {
+  margin: 3% 0 3%;
+  padding-top: 30px;
+}
+
+.projects-banner .projects-banner-content {
+  font-weight: 400;
+  padding: 50px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  display: inline-block;
+  border-radius: 20px;
+  color: #222222;
+  backdrop-filter: blur(3px);
+}
+
+.projects-banner h1 {
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
 }

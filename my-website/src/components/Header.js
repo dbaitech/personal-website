@@ -28,15 +28,6 @@ function Header() {
   return (
     <Navbar className={scrolled ? "scrolled" : ""} bg="dark" expand="lg">
       <Container>
-        {/*
-          <Navbar.Brand
-            className={
-              activeLink === "home" ? "active navbar-link" : "navbar-link"
-            }
-            onClick={() => updateActiveLink("home")}
-          >
-            Home
-          </Navbar.Brand> */}
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>
