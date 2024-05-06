@@ -18,10 +18,10 @@ function Banner() {
             </p>
 
             <p>
-              <a href="/about">Learn more about me →</a>
+              <a href="/personal-website/about">Learn more about me →</a>
             </p>
             <p>
-              <a href="/projects">View my projects →</a>
+              <a href="/personal-website/projects">View my projects →</a>
             </p>
           </div>
           <div className="connect">
