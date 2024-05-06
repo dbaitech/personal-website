@@ -22,7 +22,7 @@ function Banner() {
               <Link to="/about">Learn more about me →</Link>
             </p>
             <p>
-              <Link to="/projects">View my projects →</Link>
+              <Link to="/projects">Take a look at my projects →</Link>
             </p>
           </div>
           <div className="connect">
