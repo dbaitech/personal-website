@@ -48,7 +48,7 @@ function AboutBanner() {
             <Row>
               <Skills />
             </Row>
-            <Row>
+            {/* <Row>
               <div className="resume">
                 <p>
                   <b>
@@ -56,7 +56,7 @@ function AboutBanner() {
                   </b>
                 </p>
               </div>
-            </Row>
+            </Row> */}
           </div>
         </div>
       </Container>
