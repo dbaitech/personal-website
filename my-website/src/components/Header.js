@@ -33,7 +33,7 @@ function Header() {
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <LinkContainer to="/personal-website">
+            <LinkContainer to="/">
               <Nav.Link
                 className={
                   activeLink === "home" ? "active navbar-link" : "navbar-link"
@@ -43,7 +43,7 @@ function Header() {
                 Home
               </Nav.Link>
             </LinkContainer>
-            <LinkContainer to="/personal-website/about">
+            <LinkContainer to="/about">
               <Nav.Link
                 className={
                   activeLink === "about" ? "active navbar-link" : "navbar-link"
@@ -53,7 +53,7 @@ function Header() {
                 About
               </Nav.Link>
             </LinkContainer>
-            <LinkContainer to="/personal-website/projects">
+            <LinkContainer to="/projects">
               <Nav.Link
                 className={
                   activeLink === "projects"

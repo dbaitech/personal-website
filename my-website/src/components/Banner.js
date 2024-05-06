@@ -19,10 +19,10 @@ function Banner() {
             </p>
 
             <p>
-              <Link to="/personal-website/about">Learn more about me →</Link>
+              <Link to="/about">Learn more about me →</Link>
             </p>
             <p>
-              <Link to="/personal-website/projects">View my projects →</Link>
+              <Link to="/projects">View my projects →</Link>
             </p>
           </div>
           <div className="connect">

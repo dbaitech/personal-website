@@ -15,10 +15,10 @@ function App() {
         <ScrollToTop />
         <Header />
         <Routes>
-          <Route exact path="/personal-website" element={<Home />} />
-          <Route path="/personal-website/about" element={<About />} />
-          <Route path="/personal-website/projects" element={<Projects />} />
-          <Route path="/personal-website/resume" element={<Resume />} />
+          <Route exact path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/resume" element={<Resume />} />
         </Routes>
       </Router>
     </React.StrictMode>
