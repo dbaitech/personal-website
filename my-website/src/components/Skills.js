@@ -7,11 +7,12 @@ function Skills() {
       <div className="skills">
         <h1>Skills</h1>
         <p>
-          <b>Languages:</b> C/C++, Python, Java, JavaScript, SQL, HTML/CSS, Bash
+          <b>Languages:</b> Python, C/C++, Java, TypeScript, JavaScript, SQL,
+          HTML/CSS, Bash
         </p>
         <p>
-          <b>Technologies:</b> SpringBoot, React, Angular, Node.js, Express.js,
-          MySQL, Docker, Postman, Swagger, Retool, Unix
+          <b>Technologies:</b> Spring Boot, React, Angular, Node.js, Express.js,
+          PostgreSQL, MySQL, Docker, Postman, Swagger, Retool, Unix
         </p>
       </div>
     </Container>

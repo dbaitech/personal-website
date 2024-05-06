@@ -339,17 +339,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .about-banner p {
-  font-size: 25px;
+  font-size: 23px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   display: block;
 }
 
 .about-banner ul {
-  font-size: 25px;
+  font-size: 20px;
   letter-spacing: 0.8px;
-  line-height: 1.5em;
   display: block;
+}
+
+.about-banner li {
+  line-height: 2;
 }
 
 .about-text {
@@ -358,7 +361,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .profile-image {
   border-radius: 50%;
-  align-items: center;
   overflow: hidden;
   width: 400px;
   height: 400px;
