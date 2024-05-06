@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import { Container } from "react-bootstrap";
 import linkedin from "../assets/linkedin.svg";
 import github from "../assets/github.svg";
+import { Link } from "react-router-dom";
 
 function Banner() {
   return (
@@ -18,10 +19,10 @@ function Banner() {
             </p>
 
             <p>
-              <a href="/personal-website/about">Learn more about me →</a>
+              <Link to="/personal-website/about">Learn more about me →</Link>
             </p>
             <p>
-              <a href="/personal-website/projects">View my projects →</a>
+              <Link to="/personal-website/projects">View my projects →</Link>
             </p>
           </div>
           <div className="connect">
