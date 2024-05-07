@@ -1,6 +1,6 @@
 import "./App.css";
 import React from "react";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -11,7 +11,7 @@ import ScrollToTop from "./utils/ScrollToTop";
 function App() {
   return (
     <React.StrictMode>
-      <HashRouter>
+      <Router>
         <ScrollToTop />
         <Header />
         <Routes>
@@ -20,7 +20,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/resume" element={<Resume />} />
         </Routes>
-      </HashRouter>
+      </Router>
     </React.StrictMode>
   );
 }

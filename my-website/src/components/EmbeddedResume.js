@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Container } from "react-bootstrap";
-import { Document, Page, pdfjs } from "react-pdf";
+import { pdfjs } from "react-pdf";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
@@ -13,9 +13,6 @@ function EmbeddedResume() {
     <section className="resume" id="resume">
       <Container>
         <div className="resume-content">
-          {/* <Document file={pdfUrl}>
-            <Page pageNumber={1} />
-          </Document> */}
           <img
             src={pdfUrl}
             alt="If you cannot view my resume, please refer to my LinkedIn."
